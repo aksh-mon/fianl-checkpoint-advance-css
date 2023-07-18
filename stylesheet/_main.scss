@@ -1,0 +1,492 @@
+
+header{
+    position:absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    h1{font-size: $font-3;
+    color: $color-w;
+    font-family: $ff-3;}
+}
+
+#header-color{background-color: $color-b;}
+.headerList{padding-top: $font-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: $font-2 0;
+font-family: $ff;}
+
+#navList {
+    ul{
+display: flex;}
+li{margin-right: $font-2;
+}    
+a{color: $color-b;
+font-size: $font-1po5;
+text-shadow: $shadow;
+}
+
+}
+
+#navList{
+    a:hover,a:focus{color: $color-r;}
+
+}
+#toggle{display: none;}
+#bars{display: none;}
+
+
+.bg-image-first{background: url(./images/bg-image2.jpg) center center no-repeat;
+    background-size: cover;
+height: $height-100;
+position: relative;
+z-index: 9;
+transition: all 10s;
+}
+
+.bg-image-first:hover{
+  filter: grayscale(1);
+}
+
+.details-first{position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 99;
+padding: $font-1po5;
+text-align: center;
+
+h2{font-size: $font-3;
+margin: $font-1-5 0;
+color: $color-o;
+font-family: $ff-3;
+text-shadow: 2px 2px 4px rgba(0, 0, 0,);
+}
+
+h3{font-size: $font-2;
+    margin: $font-1-5 0;
+color: $color-w;
+font-family: $ff-2;
+text-shadow: $shadow;}
+
+ p{font-size: $font-1;
+color: $color-g;
+font-family: $ff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0,);}   
+transition: all 5s;
+}
+
+.details-first:hover{transform: scale(2);}
+
+.second{
+    background-color: $color-r;
+    padding: $font-3 0;
+font-family: $ff-2;
+}
+
+.second{
+    h2{text-align: center;
+    font-size: $font-2;
+}
+h3{text-align: center;
+    font-size: $font-1po5;
+}
+p{text-align: center;
+    font-size: $font-1;
+margin-bottom: $font-2;
+}
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: $font-1;
+    place-items: center;
+}
+.card {
+    width: $width-250;
+    height: $width-250;
+    perspective: 1000px;
+    margin-left: $font-2;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  
+  .card-back {
+    background-color: $color-b;
+    transform: rotateY(180deg);
+  }
+  
+  .card-title {
+    padding: $font-1 0;
+    position:absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+bottom: 0;  
+background-color: $color-g-5;
+h3{text-align: center;
+color: $color-g;
+font-size: $font-1po5;
+text-shadow: $shadow;}
+
+}
+  
+  .card-inputs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+  }
+  
+  .card-back:hover .card-inputs {
+    display: block;
+  }
+  
+  .card-inputs{
+   input{   
+    margin-bottom: $font-1-5;
+    width: $width-200;
+    padding: $font-1-5; 
+outline: $color-B solid $font-1-1;   
+} 
+}
+  
+  .card-inputs  {
+
+    button{
+    padding: $font-1-5 $font-1-5;
+    background-color: $color-w;
+    color: $color-o;
+    border: none;
+}  
+}
+  
+  .card-price {
+    position: absolute;
+    top: $font-1-5;
+    left: $font-1-5;
+    margin-left: $font-1;
+    color: $color-B;
+    background-color: $color-r;
+    padding: $font-1-5;
+border: $font-1-1 solid $color-B;  
+}
+
+
+.third{background: url(./images/bg-image.jpg) center center no-repeat;
+    background-size: cover;
+    height: $height-95;
+    padding: $font-2 ;
+font-family: $ff;}
+
+.third{
+    h2{text-align: center;
+    font-size: $font-2;
+    color: $color-o;
+    text-shadow: $shadow;
+}
+h3{text-align: center;
+    font-size: $font-1po5;
+color: $color-w;
+margin: $font-1-5 0;
+text-shadow: $shadow;
+}
+p{text-align: center;
+    font-size: $font-1;
+margin-bottom: $font-2;
+color: $color-g;
+text-shadow: $shadow;
+}
+
+}
+.trek-table {
+    width: 100%;
+    height: $height-70;
+    border-collapse: collapse; 
+    margin-top: $font-2;
+}
+  
+  .trek-table th,
+  .trek-table td {
+    text-align: center;
+border: $font-1-1 solid $color-B;
+}
+  
+.trek-table th {
+    background-color: $color-b;
+    color: $color-r;
+    font-size: $font-2;
+    text-shadow: $shadow;
+padding: $font-1 0;
+}
+
+  .trek-table td {
+    color: $color-w;
+    font-size: $font-1po2;
+    text-shadow: $shadow;
+padding: $font-1po5 0;
+&:hover{
+    background-color: $color-r-5;
+    color: $color-b;
+    text-shadow: $shadow;
+}
+}
+
+
+
+.fourth{
+font-family: $ff-2;
+background-color: $color-b;
+padding: $font-2 0;
+}
+
+
+.fourth{
+  h2{text-align: center;
+  font-size: $font-2;
+  color: $color-o;
+  text-shadow: $shadow;
+}
+h3{text-align: center;
+  font-size: $font-1po5;
+color: $color-w;
+margin: $font-1-5 0;
+text-shadow: $shadow;
+}
+p{text-align: center;
+  font-size: $font-1;
+margin-bottom: $font-2;
+color: $color-g;
+text-shadow: $shadow;
+}
+
+}
+.parent{display: grid;
+place-items: center;
+grid-template-columns: 1fr;
+gap: $font-2;}
+
+.child{display: flex;
+  align-items: center;
+article{
+  img{width: $width-300;
+  height: $width-300;
+transition: all 5s;}
+}
+}
+
+.child{
+  position: relative;
+  .description{
+    background-color: $color-r-5;
+ margin-left: $font-5;
+padding: $font-3;
+}
+}
+
+.description{h2{
+font-size: $font-2;
+}
+h3{font-size: $font-1po5;}
+p{font-size: $font-1;}
+}
+
+.description{
+  .links{display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+a{color: $color-w;
+  background-color: $color-b;
+  padding: $font-1-5;
+  border-radius: $font-1-3;
+  text-shadow: $shadow;
+&:hover{
+  background: transparent;
+}}
+}
+
+}
+
+.description{
+  button{text-align: left;
+  position: absolute;
+right: $font-1;
+top: 1;
+bottom: 1;
+margin-top: $font-1;
+padding: $font-1-3 $font-1;
+border-radius: $font-1-1;
+background: transparent;
+border: $color-B solid $font-1-1;
+}
+}
+
+.fifth{background:url(./images/people-1.jpg) center center no-repeat;
+background-position: top;
+background-size: cover;
+height: auto;}
+.fifth{
+  h2{text-align: center;
+  font-size: $font-2;
+  color: $color-o;
+}
+h3{text-align: center;
+  font-size: $font-1po5;
+color: $color-wt;
+text-shadow: $shadow;
+margin: $font-1-5 0;
+}
+p{text-align: center;
+  font-size: $font-1;
+margin-bottom: $font-2;
+color: $color-g;
+}
+
+}
+
+
+.fourth{
+  h2{text-align: center;
+  font-size: $font-2;
+  color: $color-o;
+  text-shadow: $shadow;
+}
+h3{text-align: center;
+  font-size: $font-1po5;
+color: $color-w;
+margin: $font-1-5 0;
+text-shadow: $shadow;
+}
+p{text-align: center;
+  font-size: $font-1;
+margin-bottom: $font-2;
+color: $color-g;
+text-shadow: $shadow;
+}
+
+}
+
+.bg-image-fifth{
+  img{width: $width-500;
+  height: $width-500;}
+}
+
+.parent-flex{
+  padding: $font-3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parent-grid{
+  display: grid;
+  grid-template-columns: repeat(3,$font-10);
+  gap: $font-1-5;
+
+.item-1{
+  padding: $font-5;
+  color: $color-r;
+  border: $font-1-1 solid $color-B;
+  background-color: $color-o;
+}
+
+}
+
+.form-map{display: flex;
+  justify-content: stretch;
+align-items: center;
+border: $font-1-1 solid $color-B;
+}
+
+#form-control{
+  display: flex;
+}
+
+.sixth{
+border: $font-1-1 solid $color-B;
+}
+
+.form_map{
+  display: flex;
+  padding: $font-1-3 0;
+}
+
+.map{width: 100%;
+height: auto;
+padding: $font-1;
+background-color: $color-r;}
+
+
+.form{width: 100%;
+  height: auto;
+padding: $font-1 ;
+background-color: $color-g;
+
+h4{text-align: center;
+font-size: $font-1po5;}
+}
+
+
+#form-control{
+  display: flex;
+  flex-direction: column;
+
+input{width: 100%;
+border: $font-1-1 solid $color-b;
+padding: $font-1-3 0 ;
+margin-bottom: $font-1-1;}
+
+label{font-size: $font-1po5;
+text-transform: capitalize;}
+
+#btn{margin-top: $font-1-5;}
+}  
+
+.footer{background-color: $color-r-5;}
+
+.footer-content{padding: $font-1;
+  display:  grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;}
+
+
+  .footer-menu{
+    .footer-heading{font-family: $ff-3;
+    font-size: $font-1po5;}
+  li{
+    margin: $font-1-3 0;
+    text-align: center;
+    font-family: $ff-2;
+    font-size: $font-1po2;
+  }
+  }
+
+  .footer-bottom{
+    font-family: $ff;
+    text-align: center;
+  background-color: $color-wt;
+  padding: $font-1-5 0;  
+  }

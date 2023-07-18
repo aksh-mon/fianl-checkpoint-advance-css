@@ -1,0 +1,132 @@
+
+@media screen and (max-width: $width-832){
+    html{font-size: $font-1;}
+    .header{position: sticky;
+    top: 0;}
+    .sm-container{
+        display: block;
+        left: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .headerList{position: relative;
+    width: 100%;
+    background-color: $color-o;
+    padding: $font-1 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    #navList{
+    display: none;
+    background-color: $color-wt;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: $height-85;
+    padding: $font-1;
+    }
+    
+    #toggle{display: none;}
+    #toggle:checked ~ #navList{
+        display: block;
+    width: 25%;
+    }
+    .ulnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: $font-3;
+    margin-top: $font-10;
+    font-weight: bolder;
+    li{
+        margin: $font-1 0;
+    }
+     }
+    #bars{display: block;
+        color: $color-b;
+    font-size: $font-1po5;
+    background-color: $color-wt;
+    padding: $font-1-5;
+    border-radius: $font-1-5;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    
+}
+
+@media screen and (max-width: $width-786) {
+
+html{font-size: $font-1;}
+.sm-container{
+    display: block;
+    left: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.headerList{position: relative;
+width: 100%;
+background-color: $color-o;
+padding: $font-1 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+#navList{
+display: none;
+background-color: $color-wt;
+position: absolute;
+top: 100%;
+right: 0;
+height: $height-85;
+padding: $font-1;
+}
+
+#toggle{display: none;}
+#toggle:checked ~ #navList{
+    display: block;
+width: 25%;
+}
+.ulnav{
+display: flex;
+flex-direction: column;
+align-items: center;
+top: $font-3;
+margin-top: $font-10;
+font-weight: bolder;
+li{
+    margin: $font-1 0;
+}
+ }
+#bars{display: block;
+    color: $color-b;
+font-size: $font-1po5;
+background-color: $color-wt;
+padding: $font-1-5;
+border-radius: $font-1-5;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.form_map{display: grid;
+grid-template-columns: 1fr;}
+
+.parent-flex{display: grid;
+    grid-template-columns: 1fr;
+gap: $font-1;
+place-items: center;}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+}
